@@ -42,8 +42,8 @@ def extract_text(filename):
         with open(fullpath, "w+", encoding="utf-8") as f:
             f.write(outputText)
 
-directory = ".\documents\input"
-# os.chdir(directory)
-for filename in os.listdir(directory):
-    extract_text(directory + "\\" + filename)
-# extract_text(".\documents\input\\68 回答書.pdf")
+# directory = ".\documents\input"
+# for filename in os.listdir(directory):
+#     extract_text(directory + "\\" + filename)
+    
+extract_text(".\documents\input\\20250418\７年４月１８日　準備書面1.pdf")
