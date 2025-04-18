@@ -25,5 +25,7 @@ for filename in os.listdir('.'):
     if len(cir_num) > 0:
         s = cir_num[0]
         s_num = str(circled_number_to_int(s))
+        if len(s_num) == 1:
+            s_num = "0" + s_num
         filename_new = filename.replace(s, s_num + " ")
         os.rename(filename, filename_new)
